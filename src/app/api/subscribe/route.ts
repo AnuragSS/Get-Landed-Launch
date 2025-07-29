@@ -1,4 +1,4 @@
-// src/app/api/subscribe/route.ts
+// app/api/subscribe/route.ts
 
 import { NextResponse } from 'next/server';
 
@@ -8,13 +8,10 @@ export async function POST(req: Request) {
   const { email, phone, university, course } = body;
 
   const apiKey = process.env.MAILERLITE_API_KEY;
-  const groupId = process.env.MAILERLITE_GROUP_ID; // Optional
+  const groupId = process.env.MAILERLITE_GROUP_ID;
 
   if (!apiKey) {
-    return NextResponse.json(
-      { error: 'Missing MailerLite API key' },
-      { status: 500 }
-    );
+    return NextResponse.json({ error: 'Missing MailerLite API key' }, { status: 500 });
   }
 
   try {
@@ -42,10 +39,10 @@ export async function POST(req: Request) {
     }
 
     return NextResponse.json({ message: 'User subscribed successfully' });
-  } catch (error: any) {
-    return NextResponse.json(
-      { error: error?.message || 'Unknown error occurred' },
-      { status: 500 }
-    );
+  } catch (error: unknown) {
+    if (error instanceof Error) {
+      return NextResponse.json({ error: error.message }, { status: 500 });
+    }
+    return NextResponse.json({ error: 'Unknown error occurred' }, { status: 500 });
   }
 }
