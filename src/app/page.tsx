@@ -9,6 +9,7 @@ import { motion } from 'framer-motion';
 
 export default function Home() {
   const [formData, setFormData] = useState({
+    name: '',
     email: '',
     phone: '',
     university: '',
