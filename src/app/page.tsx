@@ -23,17 +23,29 @@ export default function Home() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    try {
-      const res = await fetch('/api/subscribe', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
-      });
 
-      if (res.ok) setSubmitted(true);
-      else console.error('Submission failed:', await res.text());
+    const formBody = new URLSearchParams();
+    formBody.append('entry.89968451', formData.name);
+    formBody.append('entry.119731336', formData.email);
+    formBody.append('entry.1769442257', formData.phone);
+    formBody.append('entry.2092714472', formData.university);
+    formBody.append('entry.349368463', formData.course);
+
+    try {
+      const res = await fetch(
+        'https://docs.google.com/forms/u/0/d/e/1FAIpQLSdPQ8n8TyM2_Yx-sSLMEu1jji7mbGEfav2u2Qw43vuNXb1Xsw/formResponse',
+        {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+          },
+          body: formBody.toString(),
+        }
+      );
+      setSubmitted(true);
     } catch (err) {
-      console.error('Error submitting form:', err);
+      console.error('Form submission error:', err);
     }
   };
 
