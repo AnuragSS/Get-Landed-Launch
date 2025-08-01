@@ -32,7 +32,7 @@ export default function Home() {
     formBody.append('entry.349368463', formData.course);
 
     try {
-      const res = await fetch(
+      await fetch(
         'https://docs.google.com/forms/u/0/d/e/1FAIpQLSdPQ8n8TyM2_Yx-sSLMEu1jji7mbGEfav2u2Qw43vuNXb1Xsw/formResponse',
         {
           method: 'POST',
@@ -65,7 +65,6 @@ export default function Home() {
         <div className="space-x-6 text-sm hidden md:flex text-gray-700">
           <a href="#about" className="hover:text-[#316BFF] transition">About</a>
           <a href="#join" className="hover:text-[#316BFF] transition">Join</a>
-          <a href="#watch" className="hover:text-[#316BFF] transition">Watch</a>
         </div>
         <a
           href="#form"
@@ -201,17 +200,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* VIDEO */}
-      <section id="watch" className="bg-gray-200 py-16 px-4 flex justify-center items-center">
-        <iframe
-          className="w-full max-w-2xl h-64 border-2 border-gray-300 rounded-md shadow-lg"
-          src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-          title="GetLanded Explainer Video"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
-      </section>
-
       {/* FOOTER */}
       <footer className="bg-[#f9fafb] text-sm text-gray-600 pt-12 px-6">
         <div className="max-w-2xl mx-auto text-center pb-6 border-b border-gray-300">
@@ -221,9 +209,30 @@ export default function Home() {
           </p>
           <h4 className="font-semibold text-gray-800 mb-2">CONNECT</h4>
           <div className="flex justify-center gap-6 text-xl">
-            <a href="https://www.linkedin.com/company/getlandedio/posts/?feedView=all" className="hover:text-[#316BFF] transition" aria-label="LinkedIn"><FaLinkedin /></a>
-            <a href="#" className="hover:text-pink-500 transition" aria-label="Instagram"><FaInstagram /></a>
-            <a href="#" className="hover:text-red-600 transition" aria-label="YouTube"><FaYoutube /></a>
+            <a
+              href="https://www.linkedin.com/company/getlandedio/posts/?feedView=all"
+              className="hover:text-[#316BFF] transition"
+              aria-label="LinkedIn"
+              target="_blank" rel="noopener noreferrer"
+            >
+              <FaLinkedin />
+            </a>
+            <a
+              href="https://www.instagram.com/getlanded.io"
+              className="hover:text-pink-500 transition"
+              aria-label="Instagram"
+              target="_blank" rel="noopener noreferrer"
+            >
+              <FaInstagram />
+            </a>
+            <a
+              href="https://www.youtube.com/@getlandeduk"
+              className="hover:text-red-600 transition"
+              aria-label="YouTube"
+              target="_blank" rel="noopener noreferrer"
+            >
+              <FaYoutube />
+            </a>
           </div>
         </div>
         <div className="text-center text-xs py-4 text-gray-500">
