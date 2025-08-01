@@ -188,9 +188,6 @@ export default function Home() {
               <p className="text-sm text-center mt-2 text-red-500 font-medium flex justify-center items-center gap-1">
                 <FiZap className="text-xl" /> Mentor slots are limited. Reserve your spot before we open to the public.
               </p>
-              <p className="text-xs text-center text-gray-500 mt-1 flex justify-center items-center gap-1">
-                <PiStudentFill className="text-base" /> Already 2,000+ students joined from 20+ UK universities.
-              </p>
             </form>
           ) : (
             <p className="text-green-600 text-center font-semibold">
