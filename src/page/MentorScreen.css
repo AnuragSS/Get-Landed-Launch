@@ -20,21 +20,21 @@
 }
 
 .mentor-card {
-  background: #1a1a1a;
+  background: #080808;
   padding: 16px;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.2);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
   text-align: center;
   width: 100%;
   max-width: 350px;
   transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
-  border: 2px solid #2563eb;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .mentor-card:hover {
   transform: translateY(-5px);
-  border: 2px solid #2563eb;
-  box-shadow: 0 0 15px rgba(37, 99, 235, 0.6);
+  border: 1px solid #0099FF;
+  box-shadow: 0 0 30px rgba(0, 153, 255, 0.5);
 }
 
 .mentor-card img {
@@ -57,8 +57,9 @@
 }
 
 .mentor-price {
-  color: #2563eb;
+  color: #0099FF;
   font-weight: bold;
+  text-shadow: 0 0 10px rgba(0, 153, 255, 0.3);
 }
 
 .full-width {
@@ -76,11 +77,12 @@
   width: 100%;
   padding: 10px;
   font-size: 1rem;
-  border: 1px solid #2563eb;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 5px;
   box-sizing: border-box;
-  background-color: #2a2a2a;
+  background-color: #0a0a0a;
   color: #ffffff;
+  transition: border-color 0.3s, box-shadow 0.3s;
 }
 
 .search-container input[type="text"]::placeholder {
@@ -92,8 +94,9 @@
   color: transparent;
 }
 .search-container input[type="text"]:focus {
-  border-color: #2563eb;
+  border-color: #0099FF;
   outline: none;
+  box-shadow: 0 0 20px rgba(0, 153, 255, 0.2);
 }
 .mentor-container {
   padding: 40px 40px;
@@ -124,11 +127,12 @@
   width: 100%;
   padding: 12px 14px;
   font-size: 14px;
-  border: 1px solid #2563eb;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 6px;
   margin-bottom: 20px;
-  background-color: #2a2a2a;
+  background-color: #0a0a0a;
   color: #ffffff;
+  transition: border-color 0.3s, box-shadow 0.3s;
 }
 
 .mentor-filters {
@@ -147,18 +151,20 @@
 .filter-button {
   display: flex;
   align-items: center;
-  background-color: #1a1a1a;
-  border: 1px solid #2563eb;
+  background-color: #080808;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 8px 12px;
   font-size: 13px;
   border-radius: 6px;
   cursor: pointer;
   color: #ffffff;
-  transition: background-color 0.2s ease;
+  transition: all 0.3s ease;
 }
 
 .filter-button:hover {
-  background-color: #2a2a2a;
+  background-color: #0a0a0a;
+  border-color: #0099FF;
+  box-shadow: 0 0 15px rgba(0, 153, 255, 0.2);
 }
 
 .mentor-buttons {
@@ -168,25 +174,30 @@
   margin-top: 10px;
 }
 .btn.outline {
-  background-color: #1a1a1a;
-  color: #2563eb;
-  border: 1px solid #2563eb;
+  background-color: #080808;
+  color: #0099FF;
+  border: 1px solid #0099FF;
   width: 100%;
+  transition: all 0.3s ease;
 }
 
 .btn.outline:hover {
-  background-color: #2a2a2a;
+  background-color: rgba(0, 153, 255, 0.1);
+  box-shadow: 0 0 20px rgba(0, 153, 255, 0.3);
 }
 
 .btn.solid {
-  background-color: #2563eb;
+  background: linear-gradient(135deg, #0099FF 0%, #006BB8 100%);
   color: white;
   border: none;
   width: 100%;
+  box-shadow: 0 0 20px rgba(0, 153, 255, 0.3);
+  transition: all 0.3s ease;
 }
 
 .btn.solid:hover {
-  background-color: #1d4ed8;
+  background: linear-gradient(135deg, #00AAFF 0%, #0077CC 100%);
+  box-shadow: 0 0 30px rgba(0, 153, 255, 0.5);
 }
 /* Modal Overlay */
 .mentor-modal-overlay {
@@ -206,13 +217,14 @@
 
 /* Modal Box */
 .mentor-modal {
-  background: #1a1a1a;
+  background: #080808;
   border-radius: 16px;
   max-width: 700px;
   width: 100%;
   padding: 30px;
   position: relative;
-  box-shadow: 0 12px 28px rgba(37, 99, 235, 0.3);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   font-family: 'Segoe UI', sans-serif;
 }
 
@@ -286,15 +298,16 @@
 
 /* Individual Session Card */
 .session-card {
-  background: #2a2a2a;
+  background: #0a0a0a;
   padding: 20px;
   border-radius: 12px;
-  border: 1px solid #2563eb;
-  transition: box-shadow 0.2s;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
 }
 
 .session-card:hover {
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 6px 18px rgba(0, 153, 255, 0.2);
+  border-color: #0099FF;
 }
 
 .session-card h4 {
@@ -322,17 +335,18 @@
   width: 100%;
   padding: 10px;
   border-radius: 8px;
-  border: 2px solid #2563eb;
-  background: #1a1a1a;
-  color: #2563eb;
+  border: 2px solid #0099FF;
+  background: #080808;
+  color: #0099FF;
   font-weight: 600;
   cursor: pointer;
-  transition: background 0.2s, color 0.2s;
+  transition: all 0.3s ease;
 }
 
 .session-book:hover {
-  background: #2563eb;
+  background: linear-gradient(135deg, #0099FF 0%, #006BB8 100%);
   color: white;
+  box-shadow: 0 0 25px rgba(0, 153, 255, 0.5);
 }
 
 
@@ -475,20 +489,20 @@
 .mentor-filter-input {
   padding: 12px 14px;
   font-size: 0.95rem;
-  border: 1px solid #2563eb;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 6px;
   width: 100%;
-  background-color: #2a2a2a;
+  background-color: #0a0a0a;
   color: #ffffff;
-  transition: border-color 0.3s ease;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
   box-sizing: border-box;
 }
 
 .mentor-filter-dropdown:focus,
 .mentor-filter-input:focus {
   outline: none;
-  border-color: #2563eb;
-  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+  border-color: #0099FF;
+  box-shadow: 0 0 0 2px rgba(0, 153, 255, 0.2), 0 0 20px rgba(0, 153, 255, 0.1);
 }
 @keyframes fadeInUp {
   from {
@@ -543,7 +557,7 @@
 
 .mentor-card:hover {
   transform: translateY(-6px);
-  background-color: #2a2a2a;
+  background-color: #0a0a0a;
 }
 .mentor-filter-input:focus {
   transform: scale(1.02);
@@ -594,7 +608,7 @@
 }
 
 .mentor-titles {
-  background: linear-gradient(to right, #2563eb 10%, #3b82f6 50%, #2563eb 90%);
+  background: linear-gradient(to right, #0099FF 10%, #00BBFF 50%, #0099FF 90%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: shimmer 3s linear infinite;

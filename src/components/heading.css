@@ -34,19 +34,20 @@ header {
   align-items: center;
   padding: 24px 40px;
   background-color: #000000;
-  box-shadow: 0 2px 6px rgba(37, 99, 235, 0.2);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
   position: sticky;
   top: 0;
   z-index: 10;
-  border-bottom: 1px solid #2563eb;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   animation: slideDown 0.8s ease-in-out;
+  backdrop-filter: blur(10px);
 }
 
 header .text-blue {
   font-size: 1.8rem;
   font-weight: bold;
-  color: #2563eb;
-  /* text-shadow: 0 0 4px rgba(37, 99, 235, 0.5); */
+  color: #0099FF;
+  text-shadow: 0 0 20px rgba(0, 153, 255, 0.4);
   animation: fadeInLeft 0.6s ease-in-out;
 }
 
@@ -74,12 +75,13 @@ header .text-blue {
   height: 2px;
   left: 0;
   bottom: -4px;
-  background-color: #2563eb;
+  background-color: #0099FF;
   transition: width 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 153, 255, 0.5);
 }
 
 .nav-links a:hover {
-  color: #2563eb;
+  color: #0099FF;
 }
 
 .nav-links a:hover::after {
@@ -87,13 +89,14 @@ header .text-blue {
 }
 
 .nav-links .active {
-  border-bottom: 3px solid #2563eb;
+  border-bottom: 3px solid #0099FF;
   font-weight: bold;
+  text-shadow: 0 0 10px rgba(0, 153, 255, 0.5);
 }
 
 /* === Buttons === */
 .btn {
-  background-color: #2563eb;
+  background: linear-gradient(135deg, #0099FF 0%, #006BB8 100%);
   color: white;
   padding: 10px 20px;
   border-radius: 8px;
@@ -101,14 +104,14 @@ header .text-blue {
   cursor: pointer;
   font-weight: 500;
   transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
-  box-shadow: 0 0 10px rgba(37, 99, 235, 0.2);
+  box-shadow: 0 0 20px rgba(0, 153, 255, 0.3);
   margin-left: 10px;
   animation: bounceIn 0.8s ease;
 }
 
 .btn:hover {
-  background-color: #1d4ed8;
-  box-shadow: 0 0 15px rgba(37, 99, 235, 0.5);
+  background: linear-gradient(135deg, #00AAFF 0%, #0077CC 100%);
+  box-shadow: 0 0 30px rgba(0, 153, 255, 0.6);
   transform: translateY(-2px);
 }
 
@@ -180,7 +183,7 @@ header .text-blue {
 
 /* === Login Modal Container === */
 .login-modal {
-  background: #1a1a1a;
+  background: #080808;
   max-height: 90vh;
   max-width: 800px;
   width: 100%;
@@ -190,7 +193,8 @@ header .text-blue {
   overflow: hidden;
   flex-direction: column;
   padding: 0;
-  box-shadow: 0 0 15px rgba(37, 99, 235, 0.3);
+  box-shadow: 0 0 40px rgba(0, 153, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   animation: zoomIn 0.5s ease-in-out;
 }
 
@@ -251,7 +255,7 @@ header .text-blue {
   gap: 12px;
   overflow-y: auto;
   max-height: 90vh;
-  background-color: #1a1a1a;
+  background-color: #080808;
   animation: fadeInRight 0.6s ease-in-out;
 }
 
@@ -259,20 +263,20 @@ header .text-blue {
 .login-input {
   width: 100%;
   padding: 12px 14px;
-  border: 1px solid #2563eb;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 8px;
   font-size: 14px;
-  background-color: #2a2a2a;
+  background-color: #0a0a0a;
   color: #ffffff;
-  transition: border-color 0.3s;
+  transition: border-color 0.3s, box-shadow 0.3s;
   margin-bottom: 12px;
   animation: fadeIn 0.6s ease-in-out;
 }
 
 .login-input:focus {
-  border-color: #2563eb;
+  border-color: #0099FF;
   outline: none;
-  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+  box-shadow: 0 0 0 2px rgba(0, 153, 255, 0.2), 0 0 20px rgba(0, 153, 255, 0.1);
 }
 
 textarea.login-input {
@@ -398,12 +402,13 @@ textarea.login-input {
 
 /* Modal Container */
 .login-modal {
-  background-color: #1a1a1a;
+  background-color: #080808;
   padding: 30px 25px;
   border-radius: 12px;
   width: 90%;
   max-width: 600px;
-  box-shadow: 0 10px 30px rgba(37, 99, 235, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   position: relative;
   overflow-y: auto;
   max-height: 90vh;
@@ -433,12 +438,13 @@ textarea.login-input {
 .form-container textarea {
   width: 100%;
   padding: 12px 14px;
-  border: 1px solid #2563eb;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 8px;
   font-size: 15px;
   font-family: inherit;
-  background-color: #2a2a2a;
+  background-color: #0a0a0a;
   color: #ffffff;
+  transition: border-color 0.3s, box-shadow 0.3s;
 }
 
 /* Textarea Field */
@@ -452,9 +458,9 @@ textarea.login-input {
     width: 100%; /* Full width of the parent container */
 
   padding: 20px;
-  background-color: #2a2a2a;
+  background-color: #0a0a0a;
   border-radius: 10px;
-  border: 1px solid #2563eb;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   /* max-width: 400px; */
   margin: 20px auto;
 }

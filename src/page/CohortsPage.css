@@ -8,8 +8,9 @@
 .title {
   text-align: center;
   font-size: 2.5rem;
-  color: #1e40af;
+  color: #0099FF;
   margin-bottom: 30px;
+  text-shadow: 0 0 20px rgba(0, 153, 255, 0.4);
 }
 
 .cohort-list {
@@ -19,14 +20,15 @@
 }
 
 .cohort-card {
-  background: #1a1a1a;
+  background: #080808;
   border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
   padding: 20px;
   display: flex;
   flex-direction: column;
   position: relative;
-  border: 1px solid #2563eb;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
 }
 
 .cohort-header {
@@ -105,16 +107,17 @@
 }
 
 .tag {
-  background-color: #2563eb;
+  background: rgba(0, 153, 255, 0.2);
   padding: 4px 10px;
   border-radius: 999px;
   font-size: 0.85rem;
-  color: #ffffff;
+  color: #0099FF;
   font-weight: 500;
+  border: 1px solid rgba(0, 153, 255, 0.3);
 }
 
 .view-button {
-  background-color: #2563eb;
+  background: linear-gradient(135deg, #0099FF 0%, #006BB8 100%);
   color: white;
   padding: 10px 14px;
   font-weight: 600;
@@ -122,12 +125,15 @@
   border-radius: 8px;
   cursor: pointer;
   font-size: 0.95rem;
-  transition: background-color 0.2s ease;
+  transition: all 0.3s ease;
   width: 100%;
+  box-shadow: 0 0 20px rgba(0, 153, 255, 0.3);
 }
 
 .view-button:hover {
-  background-color: #1e40af;
+  background: linear-gradient(135deg, #00AAFF 0%, #0077CC 100%);
+  box-shadow: 0 0 30px rgba(0, 153, 255, 0.5);
+  transform: translateY(-2px);
 }
 
 
@@ -181,14 +187,15 @@
 }
 
 .stat-icon {
-  color: #2563eb;
+  color: #0099FF;
   font-size: 18px;
   margin-right: 8px;
 }
 
 .stat span strong {
-  color: #2563eb;
+  color: #0099FF;
   margin-right: 4px;
+  text-shadow: 0 0 10px rgba(0, 153, 255, 0.3);
 }
 
 
@@ -220,13 +227,14 @@
 }
 
 .active-cohort-viewall {
-  background-color: #1a1a1a;
-  border: 1px solid #2563eb;
+  background-color: #080808;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 10px 20px;
   border-radius: 8px;
   font-weight: 500;
   cursor: pointer;
   color: #ffffff;
+  transition: all 0.3s ease;
 }
 
 .active-cohort-empty {
@@ -241,12 +249,13 @@
 }
 
 .active-cohort-card {
-  background-color: #1a1a1a;
+  background-color: #080808;
   padding: 20px;
   border-radius: 16px;
-  box-shadow: 0 4px 8px rgba(37, 99, 235, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
   position: relative;
-  border: 1px solid #2563eb;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
 }
 
 .active-cohort-status {
@@ -311,18 +320,19 @@
 }
 
 .active-cohort-tag {
-  background-color: #2563eb;
+  background: rgba(0, 153, 255, 0.2);
   padding: 4px 10px;
   border-radius: 8px;
   font-size: 12px;
   margin-right: 6px;
   margin-top: 4px;
   display: inline-block;
-  color: #ffffff;
+  color: #0099FF;
+  border: 1px solid rgba(0, 153, 255, 0.3);
 }
 
 .active-cohort-button {
-  background-color: #3b82f6;
+  background: linear-gradient(135deg, #0099FF 0%, #006BB8 100%);
   color: white;
   border: none;
   padding: 10px;
@@ -331,4 +341,6 @@
   font-weight: 500;
   cursor: pointer;
   margin-top: 12px;
+  box-shadow: 0 0 20px rgba(0, 153, 255, 0.3);
+  transition: all 0.3s ease;
 }
