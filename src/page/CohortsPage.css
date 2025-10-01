@@ -2,6 +2,7 @@
   max-width: 1200px;
   margin: 40px auto;
   padding: 20px;
+  background-color: #000000;
 }
 
 .title {
@@ -18,13 +19,14 @@
 }
 
 .cohort-card {
-  background: white;
+  background: #1a1a1a;
   border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
   padding: 20px;
   display: flex;
   flex-direction: column;
   position: relative;
+  border: 1px solid #2563eb;
 }
 
 .cohort-header {
@@ -45,7 +47,7 @@
 
 .member-count {
   font-size: 14px;
-  color: #999;
+  color: #ffffff;
 }
 
 .mentor-info {
@@ -67,11 +69,12 @@
   font-weight: 600;
   font-size: 1rem;
   margin: 0;
+  color: #ffffff;
 }
 
 .mentor-role {
   font-size: 0.9rem;
-  color: #555;
+  color: #ffffff;
   margin: 0;
 }
 
@@ -79,18 +82,18 @@
   font-size: 1.05rem;
   font-weight: 600;
   margin: 16px 0 4px;
-  color: #111827;
+  color: #ffffff;
 }
 
 .cohort-description {
   font-size: 0.95rem;
-  color: #555;
+  color: #ffffff;
   margin-bottom: 10px;
 }
 
 .cohort-dates {
   font-size: 0.9rem;
-  color: #444;
+  color: #ffffff;
   margin-bottom: 12px;
 }
 
@@ -102,11 +105,11 @@
 }
 
 .tag {
-  background-color: #f1f5f9;
+  background-color: #2563eb;
   padding: 4px 10px;
   border-radius: 999px;
   font-size: 0.85rem;
-  color: #1e3a8a;
+  color: #ffffff;
   font-weight: 500;
 }
 
@@ -145,18 +148,19 @@
   text-align: center;
   padding: 20px 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #000000;
 }
 
 .cohorts-title {
   font-size: 2.95rem;
   font-weight: 700;
   margin-bottom: 12px;
-  color: black;
+  color: #ffffff;
 }
 
 .cohorts-subtitle {
   font-size: 20px;
-  color: #555;
+  color: #ffffff;
   max-width: 700px;
   margin: 0 auto 30px;
   line-height: 1.6;
@@ -173,7 +177,7 @@
   display: flex;
   align-items: center;
   font-size: 16px;
-  color: #444;
+  color: #ffffff;
 }
 
 .stat-icon {
@@ -191,7 +195,7 @@
 
 .active-cohort-wrapper {
   padding: 40px;
-  background-color: #f9fafb;
+  background-color: #000000;
   font-family: 'Inter', sans-serif;
 }
 
@@ -206,26 +210,28 @@
   font-size: 32px;
   font-weight: 700;
   margin: 0;
+  color: #ffffff;
 }
 
 .active-cohort-subtitle {
   font-size: 16px;
-  color: #666;
+  color: #ffffff;
   margin-top: 8px;
 }
 
 .active-cohort-viewall {
-  background-color: white;
-  border: 1px solid #ccc;
+  background-color: #1a1a1a;
+  border: 1px solid #2563eb;
   padding: 10px 20px;
   border-radius: 8px;
   font-weight: 500;
   cursor: pointer;
+  color: #ffffff;
 }
 
 .active-cohort-empty {
   text-align: center;
-  color: #555;
+  color: #ffffff;
 }
 
 .active-cohort-grid {
@@ -235,11 +241,12 @@
 }
 
 .active-cohort-card {
-  background-color: white;
+  background-color: #1a1a1a;
   padding: 20px;
   border-radius: 16px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 8px rgba(37, 99, 235, 0.2);
   position: relative;
+  border: 1px solid #2563eb;
 }
 
 .active-cohort-status {
@@ -277,24 +284,25 @@
 
 .active-cohort-role {
   font-size: 13px;
-  color: #666;
+  color: #ffffff;
 }
 
 .active-cohort-name {
   font-size: 18px;
   font-weight: 600;
   margin: 16px 0 8px;
+  color: #ffffff;
 }
 
 .active-cohort-description {
   font-size: 14px;
-  color: #444;
+  color: #ffffff;
   margin-bottom: 12px;
 }
 
 .active-cohort-date {
   font-size: 14px;
-  color: #555;
+  color: #ffffff;
   margin-bottom: 12px;
 }
 
@@ -303,13 +311,14 @@
 }
 
 .active-cohort-tag {
-  background-color: #f3f4f6;
+  background-color: #2563eb;
   padding: 4px 10px;
   border-radius: 8px;
   font-size: 12px;
   margin-right: 6px;
   margin-top: 4px;
   display: inline-block;
+  color: #ffffff;
 }
 
 .active-cohort-button {

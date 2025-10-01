@@ -1,11 +1,12 @@
 /* ==================== FOOTER ==================== */
 .footer {
-  background: linear-gradient(to right, #eef2ff, #f9fafb);
+  background: #000000;
   padding: 60px 30px 30px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #1f2937;
+  color: #ffffff;
   position: relative;
   overflow: hidden;
+  border-top: 1px solid #2563eb;
 }
 
 .footer-content {
@@ -29,7 +30,7 @@
 }
 
 .footer-brand p {
-  color: #4b5563;
+  color: #ffffff;
   max-width: 320px;
   font-size: 14.5px;
   line-height: 1.6;
@@ -52,7 +53,7 @@
 
 .social-icons a {
   font-size: 22px;
-  color: #334155;
+  color: #ffffff;
   transition: transform 0.3s, color 0.3s;
 }
 
@@ -68,7 +69,7 @@
 
 .footer-subscribe .microcopy {
   font-size: 13px;
-  color: #64748b;
+  color: #ffffff;
   margin-bottom: 12px;
 }
 
@@ -80,10 +81,12 @@
 
 .footer-subscribe input[type="email"] {
   padding: 10px 14px;
-  border: 1px solid #cbd5e1;
+  border: 1px solid #2563eb;
   border-radius: 6px;
   font-size: 14px;
   flex: 1;
+  background-color: #2a2a2a;
+  color: #ffffff;
   transition: border-color 0.3s, box-shadow 0.3s;
 }
 
@@ -122,14 +125,14 @@
 hr {
   margin-top: 40px;
   border: none;
-  border-top: 1px solid #e2e8f0;
-  opacity: 0.8;
+  border-top: 1px solid #2563eb;
+  opacity: 0.5;
 }
 
 .footer-copy {
   text-align: center;
   font-size: 13px;
-  color: #94a3b8;
+  color: #ffffff;
   margin-top: 20px;
 }
 
@@ -222,12 +225,13 @@ hr {
 }
 
 .footer {
-  background: linear-gradient(to right, #eef2ff, #f9fafb);
+  background: #000000;
   padding: 60px 30px 30px;
   font-size: 0.95rem;
   position: relative;
   overflow: hidden;
-  color: #1f2937;
+  color: #ffffff;
+  border-top: 1px solid #2563eb;
 }
 
 .footer-content {
@@ -247,7 +251,7 @@ hr {
 }
 
 .footer-brand p {
-  color: #6b7280;
+  color: #ffffff;
   max-width: 300px;
 }
 
@@ -265,7 +269,7 @@ hr {
 
 .social-icons a {
   font-size: 1.5rem;
-  color: #4b5563;
+  color: #ffffff;
   transition: transform 0.3s, color 0.3s;
 }
 
@@ -280,7 +284,7 @@ hr {
 
 .footer-subscribe .microcopy {
   font-size: 0.85rem;
-  color: #64748b;
+  color: #ffffff;
   margin-bottom: 12px;
 }
 
@@ -293,9 +297,11 @@ hr {
 .subscribe-form input[type="email"] {
   padding: 10px 14px;
   border-radius: 8px;
-  border: 1px solid #cbd5e1;
+  border: 1px solid #2563eb;
   flex: 1;
   font-size: 0.95rem;
+  background-color: #2a2a2a;
+  color: #ffffff;
 }
 
 .subscribe-form input:focus {
@@ -323,7 +329,7 @@ hr {
 .footer-copy {
   text-align: center;
   margin-top: 30px;
-  color: #9ca3af;
+  color: #ffffff;
   font-size: 0.85rem;
 }
 

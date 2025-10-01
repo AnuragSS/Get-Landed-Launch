@@ -7,8 +7,8 @@
 }
 
 body {
-  background-color: #f9fafb;
-  color: #1f2937;
+  background-color: #000000;
+  color: #ffffff;
   line-height: 1.6;
   overflow-x: hidden;
   animation: fadeIn 0.6s ease-in-out;
@@ -33,12 +33,12 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 24px 40px;
-  background-color: white;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  background-color: #000000;
+  box-shadow: 0 2px 6px rgba(37, 99, 235, 0.2);
   position: sticky;
   top: 0;
   z-index: 10;
-  border-bottom: 1px solid #e5e7eb;
+  border-bottom: 1px solid #2563eb;
   animation: slideDown 0.8s ease-in-out;
 }
 
@@ -62,7 +62,7 @@ header .text-blue {
   margin: 0 16px;
   font-size: 1rem;
   text-decoration: none;
-  color: #1f2937;
+  color: #ffffff;
   position: relative;
   transition: color 0.3s ease;
 }
@@ -180,7 +180,7 @@ header .text-blue {
 
 /* === Login Modal Container === */
 .login-modal {
-  background: white;
+  background: #1a1a1a;
   max-height: 90vh;
   max-width: 800px;
   width: 100%;
@@ -190,7 +190,7 @@ header .text-blue {
   overflow: hidden;
   flex-direction: column;
   padding: 0;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px rgba(37, 99, 235, 0.3);
   animation: zoomIn 0.5s ease-in-out;
 }
 
@@ -251,6 +251,7 @@ header .text-blue {
   gap: 12px;
   overflow-y: auto;
   max-height: 90vh;
+  background-color: #1a1a1a;
   animation: fadeInRight 0.6s ease-in-out;
 }
 
@@ -258,17 +259,20 @@ header .text-blue {
 .login-input {
   width: 100%;
   padding: 12px 14px;
-  border: 1px solid #ccc;
+  border: 1px solid #2563eb;
   border-radius: 8px;
   font-size: 14px;
+  background-color: #2a2a2a;
+  color: #ffffff;
   transition: border-color 0.3s;
   margin-bottom: 12px;
   animation: fadeIn 0.6s ease-in-out;
 }
 
 .login-input:focus {
-  border-color: #007bff;
+  border-color: #2563eb;
   outline: none;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
 }
 
 textarea.login-input {
@@ -280,7 +284,7 @@ textarea.login-input {
 .checkbox-label {
   display: block;
   font-size: 14px;
-  color: #333;
+  color: #ffffff;
   margin-bottom: 10px;
   animation: fadeInUp 0.6s ease-in-out;
 }
@@ -394,12 +398,12 @@ textarea.login-input {
 
 /* Modal Container */
 .login-modal {
-  background-color: #ffffff;
+  background-color: #1a1a1a;
   padding: 30px 25px;
   border-radius: 12px;
   width: 90%;
   max-width: 600px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 30px rgba(37, 99, 235, 0.3);
   position: relative;
   overflow-y: auto;
   max-height: 90vh;
@@ -413,6 +417,7 @@ textarea.login-input {
   background: transparent;
   border: none;
   font-size: 24px;
+  color: #ffffff;
   cursor: pointer;
 }
 
@@ -428,10 +433,12 @@ textarea.login-input {
 .form-container textarea {
   width: 100%;
   padding: 12px 14px;
-  border: 1px solid #ccc;
+  border: 1px solid #2563eb;
   border-radius: 8px;
   font-size: 15px;
   font-family: inherit;
+  background-color: #2a2a2a;
+  color: #ffffff;
 }
 
 /* Textarea Field */
@@ -445,9 +452,9 @@ textarea.login-input {
     width: 100%; /* Full width of the parent container */
 
   padding: 20px;
-  background-color: #f9f9f9;
+  background-color: #2a2a2a;
   border-radius: 10px;
-  border: 1px solid #ddd;
+  border: 1px solid #2563eb;
   /* max-width: 400px; */
   margin: 20px auto;
 }
@@ -456,7 +463,7 @@ textarea.login-input {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 16px;
-  color: #222;
+  color: #ffffff;
   text-align: left;
 }
 
@@ -466,7 +473,7 @@ textarea.login-input {
   gap: 10px;
   font-size: 15px;
   margin-bottom: 12px;
-  color: #333;
+  color: #ffffff;
   cursor: pointer;
 }
 
@@ -500,7 +507,7 @@ textarea.login-input {
 .form-container h2 {
   margin-bottom: 16px;
   font-size: 22px;
-  color: #222;
+  color: #ffffff;
   text-align: center;
 }
 @media (max-width: 480px) {
